@@ -10,7 +10,7 @@ public class AssertJTest {
 	@Test
 	public void checkEquality() {
 		Person person= new Person("Barrack", "Obama");
-		Person personClone = new Person("Barrack", "Obama");
+		Person personClone = person;
 	    
 		assertThat(person).isEqualTo(personClone);
 	}
